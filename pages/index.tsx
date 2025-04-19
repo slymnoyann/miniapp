@@ -1,7 +1,15 @@
-
-import React from "react";
+import { useEffect } from "react";
+import { createFarcasterApp } from "@farcaster/frame-sdk";
 
 const Home = () => {
+  useEffect(() => {
+    createFarcasterApp({
+      name: "OnChainGM",
+      url: "https://onchaingm.com",
+      metadataUrl: "/api/composer"
+    });
+  }, []);
+
   return (
     <div className="w-full h-screen">
       <iframe
