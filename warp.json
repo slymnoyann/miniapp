@@ -1,11 +1,11 @@
 
 {
-  "name": "Onchain GM Viewer",
-  "description": "Basit bir Farcaster mini app: onchaingm.com sitesini gösterir.",
+  "name": "OnchainGM",
+  "description": "Farcaster mini app",
   "website_url": "https://onchaingm.vercel.app",
-  "app_image_url": "https://onchaingm.com/favicon.ico",
+  "app_image_url": "https://onchaingm.com/gm-icon.png",
   "developer": {
-    "name": "Senin Adın",
-    "url": "https://github.com/seninprofil"
+    "name": "Onchaingm",
+    "url": "https://github.com/"
   }
 }
