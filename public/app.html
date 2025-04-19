@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnchainGM</title>
+    <link rel="icon" href="/gm.png" />
+
+    <script type="module">
+      import { sdk } from 'https://esm.sh/@farcaster/frame-sdk'
+
+      sdk.init({
+        appId: 'onchaingm-miniapp',
+        autoFrame: true,
+        onFrameReady: () => {
+          console.log('Frame initialized on embed')
+        },
+      })
+    </script>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: black;
+      }
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://onchaingm.com" allowfullscreen></iframe>
+  </body>
+</html>
