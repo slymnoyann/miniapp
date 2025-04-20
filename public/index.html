@@ -1,65 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="OnchainGM" />
-    <title>OnchainGM</title>
-    <link rel="icon" href="/favicon.ico" />
+<head>
+  <meta charset="UTF-8" />
+  <title>onchaingm</title>
 
-    <!-- Farcaster Frame SDK via CDN -->
-    <script type="module">
-      import { sdk } from 'https://esm.sh/@farcaster/frame-sdk'
-
-      sdk.init({
-        appId: 'onchaingm-miniapp',
-        autoFrame: true,
-        onFrameReady: () => {
-          console.log('Frame initialized')
-        },
-      })
-    </script>
-
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: #0c0c0c;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-      }
-
-      button {
-        background: #8247e5;
-        color: #fff;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 0.3s ease;
-      }
-
-      button:hover {
-        background: #a78bfa;
-      }
-    </style>
-  </head>
-  <body>
-    <img src="/gm.png" alt="App Icon" width="100" height="100" style="border-radius: 20px; margin-bottom: 20px;" />
-    <h1>Welcome to OnchainGM</h1>
-    <p>Tap below to open the embedded experience.</p>
-    <button onclick="window.location.href='/app.html'">Open App</button>
-  </body>
+  <!-- Open Graph Tags for Farcaster -->
+  <meta property="og:title" content="onchaingm" />
+  <meta property="og:description" content="gm from the chain." />
+  <meta property="og:image" content="https://onchaingm.com/social-card.png" />
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://onchaingm.com/social-card.png" />
+</head>
+<body>
+  <h1>OnChainGM</h1>
+</body>
 </html>
